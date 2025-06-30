@@ -12,4 +12,4 @@ const connectDB = async (fastify: FastifyInstance) => {
   }
 }
 
-export default connectDB;
+export default connectDB
