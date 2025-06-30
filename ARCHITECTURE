@@ -1,0 +1,30 @@
+📁 Application Structure:
+
+.
+├── app.ts
+├── 📂 controller
+│   ├── bulkmailer.controller.ts
+├── 📂 models
+│   ├── User.ts
+├── package.json
+├── 📂 plugins
+│   ├── 01-env.ts
+│   ├── 02-connectdb.ts
+│   ├── 03-cors.ts
+│   ├── 04-helmet.ts
+│   ├── 05-formbody.ts
+│   ├── 06-ratelimit.ts
+│   ├── connectdb.ts
+├── pnpm-lock.yaml
+├── 📂 routes
+│   ├── bulkMailer.ts
+│   ├── getMessages.ts
+├── 📂 schema
+│   ├── envSchema.ts
+│   ├── mailSchema.ts
+├── server.ts
+├── tsconfig.json
+├── 📂 types
+│   ├── app.fastify.d.ts
+├── 📂 utils
+│   ├── sendEmail.ts
