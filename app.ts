@@ -15,14 +15,14 @@ const app = Fastify({
 })
 
 app.register(autoLoad, {
+  dir: path.join(__dirname, "plugins"),
+})
+
+app.register(autoLoad, {
   dir: path.join(__dirname, "routes"),
   options: {
     prefix: "/api",
   },
-})
-
-app.register(autoLoad, {
-  dir: path.join(__dirname, "plugins"),
 })
 
 export default app
