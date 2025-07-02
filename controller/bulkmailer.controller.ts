@@ -19,8 +19,7 @@ async function bulkMailer(
   const { email, subject, body } = req.body
   try {
     console.log("📤 Sending email...")
-    await sendEmail(email, subject, body) // ⬅️ THIS IS THE KEY FIX
-    console.log("✅ Email sent")
+    sendEmail(email, subject, body)
     rep.send({ success: true })
   } catch (error) {
     console.error("❌ Email failed:", error)
